@@ -1,0 +1,41 @@
+{
+  "public": {
+    "author": "evan GmbH",
+    "dapp": {
+      "dependencies": {
+        "vue.libs": "^2.5.0",
+        "vuex.libs": "^3.0.0"
+      },
+      "entrypoint": "i18n.vuex.libs.js",
+      "files": [
+        "i18n.vuex.libs.js"
+      ],
+      "origin": "QmWZGHmtzXDd2cRjxaF7ZxthMpAStgZAD9t7fcUHw3fuGX",
+      "primaryColor": "",
+      "secondaryColor": "#f9f9ff",
+      "standalone": false,
+      "type": "cached-dapp"
+    },
+    "dbcpVersion": 2,
+    "description": "",
+    "i18n": {
+      "description": {
+        "en": ""
+      },
+      "name": {
+        "en": "i18n.vuex.libs"
+      }
+    },
+    "imgSquare": "https://pbs.twimg.com/profile_images/3786155988/46ea2dd8b1bdd31a8ba61044cb5b6ebe_400x400.png",
+    "name": "i18n.vuex.libs",
+    "tags": [
+      "dapp",
+      "evan",
+      "library"
+    ],
+    "version": "1.11.0",
+    "versions": {
+      "1.11.0": "QmSocunzWRKcM7Nt2m5ptFB6nNNBjAKVAT9PD9KTcZnEZz"
+    }
+  }
+}

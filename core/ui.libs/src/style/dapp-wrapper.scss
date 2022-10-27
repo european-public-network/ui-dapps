@@ -1,0 +1,392 @@
+/*
+  Copyright (C) 2018-present evan GmbH.
+
+  This program is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Affero General Public License, version 3,
+  as published by the Free Software Foundation.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Affero General Public License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with this program. If not, see http://www.gnu.org/licenses/ or
+  write to the Free Software Foundation, Inc., 51 Franklin Street,
+  Fifth Floor, Boston, MA, 02110-1301 USA, or download the license from
+  the following URL: https://evan.network/license/
+*/
+
+@import './utils';
+$sidebar-width: 104px;
+$sidebar-small-width: 64px;
+$sidebar-item-width: 40px;
+
+.evan .evan-dapp-wrapper {
+  &, .dapp-wrapper-main, .dapp-wrapper-content-wrapper {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .dapp-wrapper-body {
+    display: flex;
+    flex-direction: row;
+
+    height: calc(100% - 64px);
+
+    background-color: cssVar('bg-level-3');
+
+    .dapp-wrapper-body {
+      height: 100%;
+      padding: 0;
+    }
+
+    .dapp-wrapper-sidebar {
+      z-index: 998;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: $sidebar-width;
+      min-width: $sidebar-width;
+      padding: 44px 0;
+
+      .sidebar-header {
+        display: none;
+      }
+
+      // sidepanel toggle only on small devices
+      #evan-dapp-sidepanel-toggle {
+        display: none;
+        order: 0;
+
+        margin-right: auto;
+      }
+
+      ul.nav {
+        align-items: center;
+
+        & > li {
+          display: flex;
+          justify-content: center;
+
+          width: 100%;
+        }
+      }
+    }
+
+    .dapp-wrapper-sidebar-background {
+      display: none;
+    }
+
+    .dapp-wrapper-sidebar-2-wrapper {
+      padding: 40px 0;
+    }
+
+    .dapp-wrapper-sidebar-2 {
+      z-index: 20;
+
+      height: 100%;
+
+      background-color: cssVar('bg-level-1');
+
+      & > * {
+        overflow-y: auto;
+
+        min-width: 240px;
+        height: 100%;
+
+        &.w150 {
+          width: 150px;
+          min-width: 150px;
+        }
+
+        &.w200 {
+          width: 200px;
+          min-width: 200px;
+        }
+
+        &.w250 {
+          width: 250px;
+          min-width: 250px;
+        }
+
+        &.w300 {
+          width: 300px;
+          min-width: 300px;
+        }
+      }
+    }
+
+    .dapp-wrapper-content {
+      position: relative;
+
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      width: calc(100% + 1px);
+      height: 100%;
+      margin-left: -1px;
+
+      background-color: cssVar('bg-level-3');
+
+      .dapp-wrapper-sidebar-2 {
+        display: none;
+      }
+    }
+  }
+
+  .dapp-wrapper-sidebar, .dapp-wrapper-bottom-bar {
+    ul.nav {
+      li {
+        a {
+          font-weight: 600;
+          line-height: $sidebar-item-width;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: $sidebar-item-width;
+          height: $sidebar-item-width;
+
+          cursor: pointer;
+
+          color: cssVar('text-color');
+
+          span, p {
+            font-weight: 600;
+          }
+
+          & > i {
+            font-size: 2rem;
+            font-style: normal;
+
+            display: inline-block;
+
+            text-align: center;
+            vertical-align: middle;
+
+            color: cssVar('dapp-wrapper-sidepanel-icon-color');
+          }
+
+          .spinner-border {
+            color: cssVar('dapp-wrapper-sidepanel-icon-color');
+          }
+
+          &.active {
+            border-radius: 3px;
+            transition: 0.3s ease-out background-color, 0.3s ease-out color;
+
+            background-color: cssVar('white');
+            box-shadow: 0 2px 8px rgba(70, 194, 191, 0.5), 0 1px 4px rgba(0, 0, 0, 0.16);
+          }
+
+          &.active, &:hover {
+            &, & *, .spinner-border {
+              color: cssVar('primary');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dapp-wrapper-bottom-bar {
+    position: relative;
+
+    display: flex;
+
+    height: 64px;
+    padding-right: 32px;
+
+    border-top: 3px solid cssVar('bg-level-3');
+    background-color: cssVar('white');
+
+    ul.nav {
+      align-items: center;
+
+      height: 100%;
+    }
+
+    .profile-preview {
+      line-height: 16px;
+
+      height: 100%;
+
+      .profile-picture {
+        position: absolute;
+        bottom: 16px;
+        left: 30px;
+
+        .mask {
+          outline: 2px solid cssVar('white');
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+        }
+      }
+
+      & > .info {
+        margin-left: 112px !important;
+      }
+
+      .profile-type {
+        font-size: 10px !important;
+      }
+    }
+  }
+
+
+  @media(min-width: 992px) {
+    // lg breakpoint
+    #dapp-wrapper-sidebar-right {
+      .evan-swipe-panel {
+        height: calc(100vh - 64px);
+      }
+    }
+  }
+
+  /**
+   * below tablet
+   */
+  @media (max-width: 992px) {
+    .dapp-wrapper-body {
+      flex-direction: column-reverse;
+
+      padding-top: 62px;
+
+      // disable nested spacings
+      .dapp-wrapper-body {
+        padding-top: 0;
+      }
+
+      .dapp-wrapper-sidebar {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        left: 0;
+
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        width: 100%;
+        height: $sidebar-small-width;
+        padding: 0;
+
+        ul.nav {
+          flex-direction: row;
+          flex-wrap: nowrap;
+
+          & > li {
+            &, a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              width: $sidebar-small-width;
+              height: $sidebar-small-width;
+
+              i {
+                font-size: 24px;
+              }
+            }
+
+            a.active {
+              background-color: transparent;
+              box-shadow: none;
+            }
+          }
+        }
+
+        .evan-tooltip {
+          display: none !important;
+        }
+
+        #evan-dapp-sidepanel-toggle {
+          position: absolute;
+          left: 0;
+
+          display: flex;
+        }
+      }
+
+      .dapp-wrapper-sidebar-2 {
+        position: fixed;
+        z-index: 1029;
+        top: 62px;
+        left: -100%;
+
+        width: 100%;
+        height: calc(100% - 121px);
+
+        transition: 1s ease-out width;
+        transition: 0.2s ease-out left;
+
+        & > * {
+          width: 100% !important;
+        }
+      }
+    }
+
+    &.show-sidebar {
+      .dapp-wrapper-sidebar-2 {
+        left: 0;
+      }
+    }
+  }
+
+  .mdi-bell-outline.rotate-45 {
+    transform: rotate(45deg);
+  }
+}
+
+.dapp-wrapper-sidebar-2 {
+  ul.nav {
+    & > li {
+      border-left: 4px solid transparent;
+
+      &.active, &:hover {
+        border-left: 4px solid cssVar('primary');
+        background-color: cssVar('bg-level-1');
+      }
+    }
+  }
+}
+
+.evan {
+  .notification-dot {
+    position: absolute;
+    top: 3px;
+    right: -6px;
+
+    display: block;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    background-color: cssVar('secondary');
+
+    &:before {
+      position: absolute;
+      top: -9.5px;
+      left: -9.5px;
+
+      width: 25px;
+      height: 25px;
+
+      content: ' ';
+      animation: evanHeartbeat 1s ease-out;
+      animation-iteration-count: infinite;
+
+      opacity: 0.6;
+      border: 5px solid cssVar('secondary');
+      border-radius: 50%;
+    }
+  }
+}

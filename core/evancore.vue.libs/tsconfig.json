@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./dist/tsbuildinfo"
+  },
+  "extends": "../../tsconfig.json",
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.json"
+  ],
+  "references": [
+    { "path": "../../core/ui.libs" }
+  ]
+}

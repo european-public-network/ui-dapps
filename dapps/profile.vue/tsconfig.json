@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "./src",
+  },
+  "extends": "../../tsconfig.json",
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.json"
+  ],
+  "references": [
+    {
+      "path": "../../core/digital-twin-lib"
+    },
+    {
+      "path": "../../core/evancore.vue.libs"
+    },
+    {
+      "path": "../../core/ui.libs"
+    }
+  ]
+}

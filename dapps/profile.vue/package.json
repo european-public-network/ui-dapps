@@ -1,0 +1,20 @@
+{
+  "author": "evan GmbH",
+  "description": "",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "API",
+    "VueJS",
+    "DApp",
+    "CSS"
+  ],
+  "main": "dist/profile.vue.js",
+  "name": "@evan.network/profile",
+  "scripts": {
+    "build": "gulp --gulpfile ../../scripts/dapp/gulpfile.js --dapp $(pwd)",
+    "lint": "eslint --ext .ts,.vue --fix src/"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "4.0.0"
+}

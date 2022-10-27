@@ -1,0 +1,38 @@
+{
+  "public": {
+    "author": "evan GmbH",
+    "dapp": {
+      "dependencies": {},
+      "entrypoint": "moment.libs.js",
+      "files": [
+        "moment.libs.js"
+      ],
+      "origin": "QmaMbfUAT2oayvC8G7QkhA8fap7FVtREERGSZSu8FPVedF",
+      "primaryColor": "",
+      "secondaryColor": "#f9f9ff",
+      "standalone": false,
+      "type": "cached-dapp"
+    },
+    "dbcpVersion": 2,
+    "description": "",
+    "i18n": {
+      "description": {
+        "en": ""
+      },
+      "name": {
+        "en": "moment.libs"
+      }
+    },
+    "imgSquare": "",
+    "name": "moment.libs",
+    "tags": [
+      "dapp",
+      "evan",
+      "library"
+    ],
+    "version": "2.24.0",
+    "versions": {
+      "2.24.0": "QmZUGGpDsaJy4V9vciDyjrz2FrLtsNQF5NvB1ugAnm4uXW"
+    }
+  }
+}

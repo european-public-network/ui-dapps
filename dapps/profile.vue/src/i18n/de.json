@@ -1,0 +1,476 @@
+{
+  "_profile": {
+    "bmail": {
+      "share": {
+        "body": "Guten Tag,\n\nIhnen wurden Identitätsinformationen von {alias} freigegeben. Nutzen Sie den \"Anhang öffnen\" Button, um sich die Identität anzusehen.\n\nMit freundlichen Grüßen,\n\n{alias}",
+        "title": "Identitätsinformationen"
+      }
+    },
+    "breadcrumbs": {
+      "detail": "Identität",
+      "did": "Decentralized ID",
+      "logout": "Ausloggen",
+      "sharings": "Freigaben",
+      "verifications": "Verifizierungen",
+      "wallet": "Wallet"
+    },
+    "company": {
+      "contact": {
+        "city": {
+          "error": "Bitte geben Sie einen Ort ein!",
+          "label": "Ort",
+          "placeholder": "Berlin, London, Paris"
+        },
+        "company": {
+          "error": "Bitte geben Sie den Namen Ihres Unternehmens an!",
+          "label": "Firma",
+          "placeholder": "Beispiel GmbH"
+        },
+        "country": {
+          "desc": "Firmensitz eingeben",
+          "error": "Bitte geben Sie einen Firmensitz an!",
+          "label": "Firmensitz"
+        },
+        "email": {
+          "error": "Bitte geben Sie eine korrekt E-Mail Adresse an!",
+          "label": "E-Mail",
+          "placeholder": "test@test.de"
+        },
+        "name": {
+          "error": "Bitte geben Sie Ihren Namen ein!",
+          "label": "Name",
+          "placeholder": "Max Mustermann"
+        },
+        "postalCode": {
+          "error": "Bitte geben Sie eine gültige Postleitzahl ein!",
+          "label": "Postleitzahl",
+          "placeholder": "12345"
+        },
+        "streetAndNumber": {
+          "error": "Bitte geben Sie eine Straße und eine Hausnummer ein!",
+          "label": "Straße und Hausnummer",
+          "placeholder": "Meine Straße 15"
+        },
+        "title": "Kontaktdaten",
+        "vat": {
+          "billing_country_and_vat_missmatch": "Die angegebene USt-IdNr. passt nicht zu dem angegebenen Land.",
+          "error": "USt-IdNr. konnte nicht validiert werden.",
+          "eu_billing_vat_not_given": "Bei Kaufvorgängen außerhalb Deutschlands und innerhalb der EU muss eine valide USt-IdNr. angegeben werden.",
+          "label": "USt-IdNr.",
+          "not_eu_billing_not_possible": "EVEs können aktuell nur innerhalb der EU gekauft werden.",
+          "placeholder": "DE99999999999",
+          "vat_number_invalid": "Die angegebene USt-IdNr. scheint ungültig zu sein."
+        },
+        "website": {
+          "error": "Bitte geben Sie eine gültige URL ein!",
+          "label": "Website",
+          "placeholder": "https://website.com"
+        }
+      },
+      "registration": {
+        "company": {
+          "error": "Bitte geben Sie einen Firmennamen ein!",
+          "label": "Unternehmen",
+          "placeholder": "Muster GmbH"
+        },
+        "court": {
+          "error": "Bitte geben Sie die Informationen der Registrierungsstelle ein!",
+          "label": "Registergericht",
+          "placeholder": "Berlin"
+        },
+        "register": {
+          "error": "Bitte wählen Sie den Registertyp aus!",
+          "label": "Register",
+          "placeholder": "Art des Registers",
+          "types": {
+            "hra": "HRA",
+            "hrb": "HRB"
+          }
+        },
+        "registerNumber": {
+          "error": "Bitte geben Sie die Registernummer ein.",
+          "label": "Registernummer",
+          "placeholder": "HRA 12345"
+        },
+        "salesTaxID": {
+          "error": "Bitte geben Sie die Umsatzsteuer-ID ein.",
+          "label": "Umsatzsteuer-ID",
+          "placeholder": "DE999999999"
+        },
+        "title": "Registrierungsdaten"
+      }
+    },
+    "current-balance": "Aktueller Kontostand",
+    "detail": {
+      "account-id": "Account-ID",
+      "alias": "Alias",
+      "balance": "Guthaben",
+      "desc": "Identitätsinformationen",
+      "edit": "Identität bearbeiten"
+    },
+    "device": {
+      "detail": {
+        "dataStreamSettings": {
+          "error": "Bitte fügen Sie IoT-Einstellungsdateien ein!",
+          "label": "IoT-Einstellungen",
+          "placeholder": "Fügen Sie IoT-Einstellungsdateien hinzu."
+        },
+        "location": {
+          "error": "Bitte geben Sie einen Standort an!",
+          "label": "Standort",
+          "placeholder": "Geben Sie die Standort Koordinaten ein."
+        },
+        "manufacturer": {
+          "error": "Bitte geben Sie einen Gerätehersteller an!",
+          "label": "Hersteller",
+          "placeholder": "Geben Sie den Gerätehersteller ein."
+        },
+        "owner": {
+          "error": "Bitte geben Sie eine korrekte Account-Adresse an!",
+          "label": "Eigentümer",
+          "placeholder": "Geben Sie die Adresse des Besitzerkontos ein."
+        },
+        "serialNumber": {
+          "error": "Bitte geben Sie eine Seriennummer ein!",
+          "label": "Seriennummer",
+          "placeholder": "Geben Sie die Seriennummer des Geräts ein."
+        },
+        "settings": {
+          "error": "Bitte Einstellungsdateien einfügen!",
+          "label": "Einstellungen",
+          "placeholder": "Fügen Sie Geräteeinstellungsdateien hinzu."
+        },
+        "title": "Geräteinformationen",
+        "type": {
+          "error": "Bitte geben Sie einen Gerätetyp an!",
+          "label": "Typ",
+          "placeholder": "Geben Sie den Gerätetyp ein."
+        }
+      }
+    },
+    "did": {
+      "choose-contact": "Kontakt auswählen",
+      "created-at": "erstellt am",
+      "delegates-desc": "Im Folgenden sind Delegates angegeben, die im Namen der Identität agieren dürfen. Diese sind beispielsweise befugt Informationen zu editieren, Daten freizugeben oder Transaktionen durchzuführen.",
+      "delegates-empty": "Keine Delegates angegeben",
+      "delegates-title": "Delegates",
+      "description": "Mit Decentralized Identities (DIDs) ist es möglich, sich eindeutig, global und unabhängig vom Netzwerk zu identifizeren. Weiterhin ist es möglich festzulegen, wer Änderungen durchführen darf (Controller) und wer im Namen dieser Identität handeln darf (Delegates). Durch den Export dieses Dokumentes, können die Daten auch offline freigeben werden.",
+      "did": "DID",
+      "did-format-error": "Format: did: ...",
+      "did-title": "Decentralized ID",
+      "empty-service-endpoints": "Keine Service Endpoints angegeben",
+      "export-document": "Dokument exportieren",
+      "id": "ID",
+      "id-placeholder": "DID",
+      "id-unique-error": "ID muss eindeutig sein",
+      "no-delegate-options": "Kein Kontakt verfügbar",
+      "note": "Notiz",
+      "required-error": "Feld ist erforderlich",
+      "service-endpoints-desc": "Im Folgenden sind Service Endpoints spezifizert, die mit dieser DID assoziiert werden.",
+      "service-endpoints-empty": "Kein Service Endpoints angegeben",
+      "service-endpoints-title": "Service Endpoints",
+      "type": "Type",
+      "type-placeholder": "Type",
+      "updated-at": "aktualisiert am",
+      "url": "Endpoint",
+      "url-placeholder": "URL"
+    },
+    "dispatchers": {
+      "did-document-update": {
+        "finished": "Did wurde erfolgreich gespeichert",
+        "starting": "DiD wird gespeichert",
+        "step0": false,
+        "title": "DiD wird gespeichert"
+      },
+      "profile-share": {
+        "finished": "Daten wurde erfolgreich geteilt",
+        "starting": "Profildaten werden geteilt",
+        "step0": "Kontakt wird eingeladen",
+        "step1": "Kontakt wird aufgeräumt",
+        "step2": "Kontakt wird benachrichtigt",
+        "title": "Profildaten werden geteilt"
+      },
+      "profile-update": {
+        "finished": "Daten wurde erfolgreich gespeichert",
+        "starting": "Daten werden gespeichert",
+        "step0": false,
+        "title": "Daten speichern"
+      },
+      "request-verification": {
+        "finished": "Notar Verifikation wurde erfolgreich beantragt",
+        "starting": "Notar Verifikation wird beantragt",
+        "step0": false,
+        "title": "Notar Verifikation wird beantragt"
+      },
+      "verification-accept": {
+        "finished": "Verifikation wurde erfolgreich angenommen",
+        "starting": "Verifikation wird angenommen",
+        "step0": false,
+        "title": "Verifikation wird angenommen"
+      }
+    },
+    "my-profile": "Mein Profil",
+    "not-permitted": {
+      "accountDetails": "Identitätsinformationen",
+      "contact": "Kontaktdaten",
+      "desc": "Sie haben keine Berechtigungen, diese Daten einzusehen.",
+      "deviceDetails": "Geräteinformationen",
+      "registration": "Registrierungsdaten"
+    },
+    "not-permitted-view": "Sie haben keine Rechte, diese Daten für die ausgewählte Identität anzusehen.",
+    "profile": "Profil",
+    "sharing": {
+      "description": "Um Ihre Identitätsdaten mit anderen Partnern zu teilen, wählen Sie zunächst den entsprechenden Kontakt sowie danach die zu teilenden Daten aus. Klicken Sie auf \"Daten freigeben\".",
+      "description-no-contacts": "Identitätsinformationen können mit anderen Partnern geteilt werden, nachdem Sie eine sichere Verbindung zu deren evan.network Identität aufgebaut haben. Gehen Sie dazu in die Kontaktübersicht und laden Sie Ihre Partner per E-Mail oder auch per Identitäts-ID ein, um Ihre Daten vertrauensvoll zu teilen.",
+      "permissionsTitle": "Identitätszugriffsrechte",
+      "profileContract": {
+        "accountDetails": {
+          "name": "Details",
+          "properties": {
+            "accountName": "Name",
+            "picture": "Bild",
+            "profileType": "Identitätstyp"
+          }
+        },
+        "contact": {
+          "name": "Kontaktdaten",
+          "properties": {
+            "city": "Ort",
+            "country": "Firmensitz",
+            "postalCode": "Postleitzahl",
+            "streetAndNumber": "Straße",
+            "website": "Website"
+          }
+        },
+        "deviceDetails": {
+          "name": "Geräteinformationen",
+          "properties": {
+            "dataStreamSettings": "IoT-Einstellungen",
+            "location": "Standort",
+            "manufacturer": "Hersteller",
+            "owner": "Eigentümer",
+            "serialNumber": "Seriennummer",
+            "settings": "Einstellungen",
+            "type": "Typ"
+          }
+        },
+        "name": "Identitätsdaten",
+        "registration": {
+          "name": "Registrierungsdaten",
+          "properties": {
+            "court": "Registergericht",
+            "register": "Register",
+            "registerNumber": "Registernummer",
+            "salesTaxID": "Umsatzsteuer-ID"
+          }
+        }
+      }
+    },
+    "sharings": {
+      "desc": "Nachfolgend finden Sie alle Kontakte, mit denen Sie derzeit Identitätsinformationen teilen. Klicken Sie auf eine Identität, um die Berechtigungen anzupassen.",
+      "no-data": "Bisher wurden keine Identitätsdaten freigegeben",
+      "title": "Freigaben für Ihre Identitätsdaten"
+    },
+    "type": {
+      "change": "Ändern",
+      "choose": "Identitätstyp spezifieren",
+      "missing-type": "Nutzen Sie die nachfolgende Interaktionsfläche, um Ihre Identität genauer zu spezifieren.",
+      "missing-type-foreign": "Für diese Identität wurde noch kein Typ ausgewählt.",
+      "no-verifications-avaiable": "Für Ihren Identitätstyp stehen aktuell keine Verifikationen zur Verfügung.",
+      "switch": "Geben Sie Ihren Identitätstyp an."
+    },
+    "verifications": {
+      "add": "Verifikation hinzufügen",
+      "back": "Zurück",
+      "categories": {
+        "identifications": "Identifikationen",
+        "notary": "Notarielle Verifikation"
+      },
+      "description": "Hier können Sie alle Ihre Verifikationen einsehen. Eine Verifikation im evan.network ermöglicht Ihnen, als vertrauensvoller Partner in einem digitalen Netzwerk wahrgenommen zu werden.",
+      "done": "Schließen",
+      "empty": "Keine Verifikationen verfügbar",
+      "error": "Fehler",
+      "error-loading": "Beim Laden der Daten ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "next": "Weiter",
+      "notary": {
+        "account-id": "Identität",
+        "check-updates": "Warte auf Aktualisierung",
+        "info": "Identifizieren Sie Ihr Konto als vertrauenswürdiges evan.network-Mitglied",
+        "issue": {
+          "accountId": {
+            "desc": "Identität für die die notarielle Bestätigung erstellt werden soll.",
+            "error": "Bitte geben Sie eine gültige Adresse an!",
+            "title": "Identität"
+          },
+          "file-rename-hint": "Die hochgeladenen Dateien werden bei während der Ausstellung der Organisations-Verifikation in ein einheitliches Namensschema umbenannt.",
+          "header": "Organisations-Verifikation ausstellen",
+          "issue": "Organisations-Verifikation ausstellen",
+          "issued": {
+            "error": {
+              "desc": "Die Organisations-Verifikation konnte nicht ausgestellt werden. Bitte versuchen Sie es erneut oder kontaktieren Sie Ihren Administrator.",
+              "title": "Fehler"
+            },
+            "success": {
+              "desc": "Die Organisations-Verifikation wurde erfolgreich ausgestellt.",
+              "title": "Abgeschlossen"
+            }
+          },
+          "issuing": "Organisations-Verifikation wird ausgestellt",
+          "privateFiles": {
+            "error": "Sie müssen mindestens 1 notariell bestätigtes Dokument hinzufügen, um fortzufahren.",
+            "title": "Verschlüsselte, notariell bestätige Dateien"
+          },
+          "publicFiles": {
+            "error": "Sie müssen mindestens 1 notariell bestätigtes Dokument hinzufügen, um fortzufahren.",
+            "title": "Öffentliche, notariell bestätige Dateien"
+          },
+          "requestId": {
+            "desc": "Geben Sie die Anfrage-ID an, für die die Notarielle Verifikation abgeschlossen werden soll, ein.",
+            "error": "Bitte geben Sie eine korrekte Anfrage-ID ein!",
+            "title": "Anfrage-ID"
+          }
+        },
+        "learn-more": "Mehr erfahren",
+        "no-requests": "Sie haben noch keine notarielle Verifikation beantragt. Nutzen Sie die folgende Schaltfläche um diese anzufordern.",
+        "notary": "Notar Knobloch",
+        "pin": {
+          "confirmation-code": "Ihr Bestätigungscode wurde erfolgreich erkannt.",
+          "confirmation-code-desc": "Drucken Sie Ihren Bestätigungscode und senden Sie ihn per Post an die auf dem Dokument angegebene Adresse.",
+          "desc": "Bitte geben Sie Ihre PIN ein. Sie finden Ihre PIN in der Bestätigungsanfrage des Notars.",
+          "desc-hin": "Bitte achten Sie bei der Eingabe auf Groß- und Kleinschreibung.",
+          "did-printed": "Haben Sie das Dokument gedruckt?",
+          "do-not-forget": "Bitte vergessen Sie nicht Ihre Unterschrift und den Firmenstempel und schicken Sie es per Post an den anfragenden Notar.",
+          "download": "Kein Drucker verfügbar? Download als PDF Datei",
+          "generate-answer": "Code generieren",
+          "header": "Authentifizierung",
+          "next-step": "Nach erfolgreicher Prüfung durch den Notar wird Ihre Identität verifiziert.",
+          "next-step2": "Sie werden in Ihrer Mailbox darüber informiert.",
+          "pin": {
+            "desc": "Die per Brief erhaltene, sechsstellige PIN.",
+            "error": "Bitte geben Sie Ihre PIN ein, um fortzufahren.",
+            "error2": "Die eingegebene PIN war nicht korrekt. Bitte geben Sie die korrekte PIN ein.",
+            "title": "PIN"
+          },
+          "step": {
+            "pin": "PIN",
+            "print": "Bestätigungsdokument drucken",
+            "send": "Per Post senden"
+          }
+        },
+        "print": "Drucken",
+        "request": {
+          "contact": {
+            "error": "Bitte geben Sie eine Kontaktperson an!",
+            "label": "Ansprechpartner",
+            "placeholder": "Vorname und Nachname"
+          },
+          "costs": {
+            "approve": "Ja, ich fordere die notarielle Verifikation zu den Transaktionskosten von 200 EVE an.",
+            "description": "Die Transaktionskosten für die notarielle Verifikation betragen 200 EVE. Ihr Wallet wird mit diesem Betrag belastet.",
+            "hint": "Das Anfordern einer notariellen Verifikation ist kostenpflichtig.",
+            "title": "Kosten"
+          },
+          "department": {
+            "error": "Bitte geben Sie eine Abteilung an!",
+            "label": "Abteilung",
+            "placeholder": "Abteilung"
+          },
+          "description": "Bitte füllen Sie das Formular aus, um eine notarielle Verifikation Ihrer Organisation anzufordern. Dieser Service ist kostenpflichtig.",
+          "fill-missing": "Bitte füllen Sie alle erforderlichen Unternehmensinformationen und speichern Sie diese ab.",
+          "header": "Notarielle Verifikation",
+          "how": {
+            "steps": {
+              "1": {
+                "description": "Geben Sie Handelsregisternummer, Registergericht, Ihre Anschrift und einen Ansprechpartner an.",
+                "title": "Anfordern"
+              },
+              "2": {
+                "description": "Sie erhalten eine PIN per Post. Generieren Sie mit dieser das Bestätigungsdokument und senden Sie es unterschrieben per Post an den anfragenden Notar.",
+                "title": "Authentifizieren"
+              },
+              "3": {
+                "description": "Ist die notarielle Verifikation erfolgreich, werden Sie benachrichtigt. Akzeptieren Sie als letzten Schritt die Verifikation.",
+                "title": "Akzeptieren"
+              }
+            },
+            "title": "Schritte"
+          },
+          "mail": {
+            "body": "Hiermit beantrage Ich eine Notarielle Bestätigung für die folgenden Informationen: <ul><li>Identität: {organizationEvanId}</li><li>Account: {accountId}</li><li>Handelsregisternummer: {organizationRegistration}</li><li>Organisation: {organizationName}</li><li>Kontakt: {organizationContact}</li><li>Anschrift: {organizationStreetAddress}</li><li>Stadt: {organizationZipCode} {organizationCity} ,{organizationCountry}</li></ul>",
+            "title": "Beantragung einer Notariellen Bestätigung"
+          },
+          "not-enough-funds": "<i class=\"mdi mdi-alert-outline\"></i> Sie benötigen mindestens 200 EVE. Ihre Wallet hat nicht genügend EVE ({readableFunds} EVE)! <a href=\"/#/dashboard.vue.evan/profile.vue.evan/wallet\">EVE kaufen</a>",
+          "only-de": "Momentan wird die notarielle Verifikation nur für Unternehmen in Deutschland unterstützt.",
+          "postal-address": "Anschrift",
+          "proof": {
+            "description": "Für die Verifikation Ihres Unternehmens erhalten Sie im nächsten Schritt eine PIN per Post vom Notar zu Händen der folgenden Person.",
+            "title": "Bitte überprüfen Sie Ihre Daten."
+          },
+          "request-ident": "Anfordern",
+          "request-verification": "Notarielle Verifikation anfordern",
+          "requested1": "Sie haben erfolgreich eine notarielle Verifikation angefordert.",
+          "requested2": "Es wurden 200 EVE als Transaktionskosten von Ihrem Wallet abgebucht.",
+          "requested3": "Sie erhalten in Kürze vom Notar Post!",
+          "requesting": "Notarielle Verifikation wird angefordert",
+          "requesting-account": "Anfragende Identität",
+          "step": "Schritt",
+          "who": {
+            "description": "Als eingetragenes Unternehmen können Sie eine notarielle Verifikation Ihrer Identität anfordern.",
+            "link": "Mehr erfahren",
+            "title": "Voraussetzungen"
+          },
+          "why": {
+            "description": "Mit der notariellen Verifikation wird bestätigt, dass Ihr Unternehmen im Besitz der Identität {accountId} ist. Durch diese Bestätigung können Sie sich gegenüber Ihren Geschäftspartnern ausweisen und verifizieren, dass Transaktionen, Digitale Zwillinge und Smart Contracts von Ihnen stammen.",
+            "link": "Mehr erfahren",
+            "title": "Vorteile"
+          }
+        },
+        "request-error": "Informationen zu dieser Anfrage konnten nicht geladen werden!",
+        "request-error-desc": "Bitte laden Sie die Seite erneut.",
+        "request-notary-verification": "Eine notarielle Bestätigung beantragen",
+        "status": {
+          "accepted": "notariell verifiziert",
+          "confirming": "in Prüfung",
+          "finished": "notariell verifiziert",
+          "forwarding": "wird vom Provider bearbeitet",
+          "issued": "notariell verifiziert",
+          "requested": "beantragt",
+          "title": "Verifikation",
+          "unknown": "keine Verifikation"
+        },
+        "status-actions": {
+          "confirming": "Bestätigung drucken",
+          "issued": "Annehmen",
+          "requested": "PIN eingeben",
+          "unknown": "Anfordern",
+          "unknown-long": "Notarielle Verifikation anfordern"
+        },
+        "step": {
+          "costs": "Kosten",
+          "summary": "Zusammenfassung",
+          "your_data": "Ihre Daten"
+        },
+        "title": "Notarielle Verifikation",
+        "verification": {
+          "accept": "Annehmen",
+          "attachments": "Anhang",
+          "close-detail": "Schließen",
+          "created": "Erstellt",
+          "expired": "abgelaufen",
+          "expired-on": "abgelaufen am",
+          "incorrect": "Die Ihnen ausgestellten Organisationsidentifikationen wurden nicht von der korrekten Instanz erstellt.",
+          "organization": "Organisations-Verifikation",
+          "organization-random": "Organisations-ID-Verifikation",
+          "status": "Status",
+          "topic": "Verifizierungspfad",
+          "topic-desc": "Dieses Konto der Firma {companyName} wurde notariell beglaubigt. Damit wurde die Authentizität des Unternehmens und die Zuordnung zu diesem Konto bescheinigt.",
+          "valid-indefinitely": "unbegrenzt gültig",
+          "valid-until": "gültig bis",
+          "verified-by": "Verifiziert durch"
+        }
+      },
+      "reload": "Neu-laden",
+      "title": "Alle Verifikationen"
+    }
+  }
+}
